@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revista165</title>
+<link rel="stylesheet" href="Hanna.css">
+</head>
+<body>
+    <header>
+        <h1>MODA</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/Users/salsademazapan/Desktop/Julia/Inicio/Inicio.html">Página principal</a></li>
+            <li><a href="/Users/salsademazapan/Desktop/Julia/Alan/Revista.html">Música</a></li>
+            <li><a href="/Users/salsademazapan/Desktop/Julia/Luis/Luis.html">Deportes</a></li>
+            <li><a href="#pie">Contacto</a></li>
+        </ul>
+    </nav>
+        <article id="text">
+         <h1>¿Que es la Met Gala?</h1>
+         <p>La Gala del Met o la Costume Institute Gala es un evento benéfico que da inicio a la exposición de moda anual del Instituto del Vestido del Museo Metropolitano de Arte de la ciudad de Nueva York. Los fondos recaudados en la gala constituyen todo el presupuesto anual de Instituto del Vestido y, según se informa, en 2010 alcanzaron los 9 millones de dólares.</p>
+         <p>Con el fin de celebrar la exposición de primavera del Instituto del Vestido todos los invitados a la velada se visten de acuerdo al tema del año. Por ejemplo, en 2016 la temática fue Manus x Machina: La Moda en la Era de la Tecnología, que estuvo centrada en la dicotomía entre los modelos elaborados a mano de Alta Costura y las prendas que incluyen en su configuración las últimas innovaciones tecnológicas. Otros años se han dedicado retrospectivas a un diseñador en particular, como Charles James o Rei Kawakubo. La Gala del Met es uno de los eventos sociales más importantes en la agenda de Manhattan y allí se citan celebridades, empresarios, realeza, modelos, diseñadores y socialites de todo el mundo.</p>
+        </article>
+        <img id="img1" src="/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna1.jpeg" alt="imagen1">
+        <article id="text2">
+        <br>
+         <h1>La Met Gala de este año</h1>
+         <p>El tema de este año se inspiró en "Garden of time", una historia de J.G. Ballard sobre un conde que, para evitar que una turba enfurecida se acercara a su castillo, corta una a una las flores de su jardín para así ralentizar el tiempo, hasta que no quedó ni una. Con el trasfondo distópico de esta historia y el énfasis de la unión entre lo antiguo y lo nuevo, fuimos testigos de una alfombra roja repleta de todo tipo de prendas, desde looks con flores, hasta moda de inspiración tecnológica, e incluso alguna que otra referencia a la Bella Durmiente.</p>
+         <p>Cuando el anfitrión de una fiesta decide hacerla bajo una temática, espera que sus invitados se entusiasmen con la idea y respeten las reglas, sin embargo, en la MET Gala 2024 no todos pensaron igual. Es cierto que la interpretación de una obra siempre puede quedar a discreción personal, pero a diferencia de otros años, el protocolo de vestuario para la alfombra roja era muy clara y menos subjetiva que en otras ocasiones.</p>
+        </article>
+        <div class="slider-container">
+                <img id="slider" src="/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p1.jpeg" alt="Imagen" />
+        </div>
+        <section id="Green">
+        <article id="text3">
+         <h1>titulo 2</h1>
+         <p>texto1.</p>
+         <div class="slider-container2">
+                <img id="slider2" src="/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p1.jpeg" alt="Imagen" />
+        </div>
+        <footer id="pie">Autor: Hanna Joaly Hernandez De Gante</footer>
+         <footer id="pie">Correo: Hanna Joaly Hernandez De Gante</footer>
+        </article>
+        </section>
+
+    <script>
+
+        // JavaScript para mostrar/ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scroll hacia abajo
+                document.querySelector("nav").classList.remove("show");
+            } else {
+                // Scroll hacia arriba
+                document.querySelector("nav").classList.add("show");
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+    <script>
+        let index = 0;
+        const images = ['/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p1.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p2.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p3.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p4.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p5.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p6.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p7.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p8.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p9.jpeg', '/Users/salsademazapan/Desktop/Julia/Hanna/Recursos_Hanna/Hanna_p10.jpeg'];
+
+        function changeImage() {
+            index = (index + 1) % images.length;
+            document.getElementById('slider').src = images[index];
+        }
+        setInterval(changeImage, 3000); // Cambia la imagen cada 3 segundos
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revista165</title>
+<link rel="stylesheet" href="Revista.css">
+</head>
+<body>
+    <header>
+        <h1>MÚSICA</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/Users/salsademazapan/Desktop/Julia/Inicio/Inicio.html">Página principal</a></li>
+            <li><a href="/Users/salsademazapan/Desktop/Julia/Luis/Luis.html">Deportes</a></li>
+            <li><a href="/Users/salsademazapan/Desktop/Julia/Hanna/Hanna.html">Moda</a></li>
+            <li><a href="#pie">Contacto</a></li>        
+        </ul>
+    </nav>
+        <article id="text">
+         <h1>Conociendo a Rodrigo</h1>
+         <time datatime= "2024-03-06" pubdate id = "Fecha"> Publicado el 10-05-2023</time>
+         <p>Rodrigo Torres, mejor conocido como Nsqk, aún mantiene vivo el recuerdo de su primer concierto en solitario. El pasado 06 de mayo, el músico inició la gira “Roy En Vivo” en Monterrey, Nuevo León, su ciudad natal y, días más tarde, agotó ocho fechas alrededor del país. Meses atrás, se presentó en el Festival Ceremonia y abrió el show de Porter Robinson en la Ciudad de México, pero nada puede sustituir la energía de un público que transforma su nombre en un eco infinito.</p>
+         <p>Sobre el escenario, Nsqk es la mezcla perfecta entre energía y nostalgia. Su distintiva fuerza performática exalta arreglos musicales inéditos y letras que narran sus pensamientos más profundos, mientras expone fragmentos personales a través de elementos visuales o su interacción con el público. “Cuando estoy en el escenario, me transformo en la persona que me gustaría ser fuera de él”.</p>
+        </article>
+        <img src="/Users/salsademazapan/Desktop/Julia/Alan/Recursos_Alan/Nsqk3.jpeg" alt="imagen1">
+        <section id="Green">
+        <article id="text2">
+         <h1>Inicio en la música</h1>
+         <p>Rodrigo se adentró en la música a los 13 años, cuando los sonidos de Skrillex, Swedish House Mafia, Avicii, Deadmau5 y Zedd se sumaron al auge de la música electrónica, pero más allá de un gusto por el género, despertó su interés por descubrir los procesos detrás de las canciones. “Investigué, encontré los programas y empecé a aprender. Recuerdo que un tío me regaló una laptop con Windows 97, apenas jalaba, pero así comencé a producir”, narra. En 2015, luego de subir algunas canciones a SoundCloud y YouTube, se unió a Internet Trash Collective, un grupo de músicos de todo el mundo que le dio origen a Nsqk.</p>
+         <br>
+         <footer id="pie">Autor: Alan Antonio García Ruíz</footer>
+         <footer>Correo: alanantonio2302@gmail.com</footer>
+        </article>
+        </section>
+    <script>
+        // JavaScript para mostrar/ocultar la barra de navegación al hacer scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                // Scroll hacia abajo
+                document.querySelector("nav").classList.remove("show");
+            } else {
+                // Scroll hacia arriba
+                document.querySelector("nav").classList.add("show");
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
+
+</body>
+</html>
